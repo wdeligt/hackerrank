@@ -1,4 +1,4 @@
-# Japanese Cities' Attributes
+# Japanese Cities' Names
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -23,7 +23,7 @@ The **CITY** table is described as follows:
 **Language:** db2  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-26T10:59:02.876Z  
+**Submitted:** 2026-07-26T10:59:38.616Z  
 
 ```db2
 
@@ -33,7 +33,8 @@ The **CITY** table is described as follows:
     2. The AS keyword causes errors, so follow this convention: "Select t.Field From table1 t" instead of "select t.Field From table1 AS t"
     3. Type your code immediately after comment. Don't leave any blank line.
 */
-SELECT * FROM CITY WHERE COUNTRYCODE = 'JPN';
+
+SELECT NAME FROM CITY WHERE COUNTRYCODE = 'JPN';
 
 ```
 
