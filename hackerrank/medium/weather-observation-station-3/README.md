@@ -1,4 +1,4 @@
-# Revising the Select Query II
+# Weather Observation Station 3
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -26,7 +26,7 @@ where **LAT\_N** is the northern latitude and **LONG\_W** is the western longitu
 **Language:** db2  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-27T14:04:54.743Z  
+**Submitted:** 2026-07-27T14:06:51.159Z  
 
 ```db2
 
@@ -36,7 +36,7 @@ where **LAT\_N** is the northern latitude and **LONG\_W** is the western longitu
     2. The AS keyword causes errors, so follow this convention: "Select t.Field From table1 t" instead of "select t.Field From table1 AS t"
     3. Type your code immediately after comment. Don't leave any blank line.
 */
-SELECT NAME FROM CITY WHERE COUNTRYCODE = 'USA' AND POPULATION > 120000;
+SELECT DISTINCT CITY FROM STATION WHERE MOD(ID, 2) = 0;
 
 ```
 
