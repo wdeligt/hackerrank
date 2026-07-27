@@ -52,9 +52,9 @@ Output:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 76 ms  
-**Memory:** 0B  
-**Submitted:** 2026-07-27T16:03:12.825Z  
+**Runtime:** 844 ms (beats 12.93%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-07-27T16:03:17.554Z  
 
 ```sql
 # Write your MySQL query statement below
