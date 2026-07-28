@@ -1,4 +1,4 @@
-# Find the Runner-Up Score!
+# Nested Lists
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -39,13 +39,24 @@ Print the name(s) of any student(s) having the second lowest grade in. If there 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-28T15:11:50.694Z  
+**Submitted:** 2026-07-28T15:58:03.295Z  
 
 ```py
 if __name__ == '__main__':
-    n = int(input())
-    arr = map(int, input().split())
-    print(sorted(set(arr))[-2])
+    records = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        records.append([name, score])
+        
+    nums = set([record[1] for record in records])
+    ordered_nums = sorted(nums)
+    second_lowest_grade = ordered_nums[1]
+    names = sorted([record[0] for record in records if record[1] == second_lowest_grade])
+    for name in names:
+        print(name)
+    
+    
 
 ```
 
