@@ -1,4 +1,4 @@
-# Weather Observation Station 3
+# Weather Observation Station 4
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -25,20 +25,17 @@ For example, if there are three records in the table with **CITY** values 'New Y
 
 ## Solution
 
-**Language:** db2  
+**Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-27T14:06:55.734Z  
+**Submitted:** 2026-07-28T14:00:50.460Z  
 
-```db2
-
+```sql
 /*
-    Enter your query here and follow these instructions:
-    1. Please append a semicolon ";" at the end of the query and enter your query in a single line to avoid error.
-    2. The AS keyword causes errors, so follow this convention: "Select t.Field From table1 t" instead of "select t.Field From table1 AS t"
-    3. Type your code immediately after comment. Don't leave any blank line.
+Enter your query here.
 */
-SELECT DISTINCT CITY FROM STATION WHERE MOD(ID, 2) = 0;
+SELECT COUNT(CITY) - COUNT(DISTINCT CITY)
+FROM STATION;
 
 ```
 
