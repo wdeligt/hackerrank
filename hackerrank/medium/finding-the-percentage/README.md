@@ -1,4 +1,4 @@
-# Nested Lists
+# Finding the percentage
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -33,24 +33,24 @@ Print one line: The average of the marks obtained by the particular student corr
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-28T15:58:09.316Z  
+**Submitted:** 2026-07-28T16:07:17.701Z  
 
 ```py
 if __name__ == '__main__':
-    records = []
-    for _ in range(int(input())):
-        name = input()
-        score = float(input())
-        records.append([name, score])
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+    sum = 0 
+    l = len(student_marks[query_name])
+    for num in student_marks[query_name]:
+        sum += num
+    average = round(sum / l,2 )
+    print(f"{average:.2f}")
         
-    nums = set([record[1] for record in records])
-    ordered_nums = sorted(nums)
-    second_lowest_grade = ordered_nums[1]
-    names = sorted([record[0] for record in records if record[1] == second_lowest_grade])
-    for name in names:
-        print(name)
-    
-    
 
 ```
 
