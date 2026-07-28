@@ -1,16 +1,8 @@
-def is_leap(year):
-    leap = False
+if __name__ == '__main__':
+    n = int(input())
+    out = ''
+    for i in range(1, n+1):
+        out += str(i)
+    print(out)
     
-    # Write your logic here
-    if year % 4 == 0:
-        if year % 100 == 0:
-            if year % 400 == 0:
-                leap = True
-            else:
-                leap = False
-        else:
-            leap = True
-    else:
-        leap = False
-    return leap
-
+        
